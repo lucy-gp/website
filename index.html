@@ -16,169 +16,123 @@
         <span class="brand-name">YourBrand</span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </button>
-
-      <nav class="nav" data-nav>
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About us</a>
-        <a href="partners.html" class="nav-link">Partners</a>
-        <a href="contact.html" class="nav-link nav-cta">Contact</a>
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="about.html">About us</a>
+        <a class="nav-link" href="partners.html">Partners</a>
+        <a class="nav-link nav-cta" href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="kicker">Music. Culture. Collaboration.</p>
-          <h1 class="hero-title">
-            A modern home for sound, artists, and partners.
-          </h1>
-          <p class="hero-subtitle">
-            Replace this copy with your story—what you do, who you serve, and why it matters.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="contact.html">Get in touch</a>
-            <a class="btn btn-ghost" href="about.html">Learn more</a>
-          </div>
-
-          <div class="hero-stats" role="list" aria-label="Highlights">
-            <div class="stat" role="listitem">
-              <div class="stat-value">120+</div>
-              <div class="stat-label">Artists</div>
-            </div>
-            <div class="stat" role="listitem">
-              <div class="stat-value">35</div>
-              <div class="stat-label">Partners</div>
-            </div>
-            <div class="stat" role="listitem">
-              <div class="stat-value">10M+</div>
-              <div class="stat-label">Streams</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-media" aria-hidden="true">
-          <div class="media-card">
-            <div class="media-glow"></div>
-            <div class="media-top">
-              <div class="pill">New releases</div>
-              <div class="pill pill-outline">Purple nights</div>
-            </div>
-
-            <div class="media-art">
-              <!-- Simple decorative shapes (replace with your image/video if you want) -->
-              <div class="blob b1"></div>
-              <div class="blob b2"></div>
-              <div class="blob b3"></div>
-              <div class="ring"></div>
-            </div>
-
-            <div class="media-bottom">
-              <div class="mini-row">
-                <span class="dot"></span>
-                <span>Featured campaign</span>
-              </div>
-              <div class="mini-row">
-                <span class="dot dot-2"></span>
-                <span>Community updates</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container hero-strip">
-        <div class="strip-title">Trusted by</div>
-        <div class="logo-row" aria-label="Partner logos">
-          <div class="logo">Partner One</div>
-          <div class="logo">Partner Two</div>
-          <div class="logo">Partner Three</div>
-          <div class="logo">Partner Four</div>
-          <div class="logo">Partner Five</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-light">
       <div class="container">
-        <div class="section-head">
-          <h2 class="section-title">What we do</h2>
-          <p class="section-subtitle">Three simple blocks you can expand into real content.</p>
+        <div class="reel-wrap" aria-label="Artist reel">
+          <div class="reel" id="reel" role="list">
+            <!-- Replace the image URLs below with your own -->
+            <img
+              class="reel-item is-active"
+              src="https://images.unsplash.com/photo-1520975661595-6453be3f7070?auto=format&fit=crop&w=1600&q=80"
+              alt="Artist 1"
+              loading="eager"
+            />
+            <img
+              class="reel-item"
+              src="https://images.unsplash.com/photo-1515168833906-cf1c7c4d1b3b?auto=format&fit=crop&w=1600&q=80"
+              alt="Artist 2"
+              loading="lazy"
+            />
+            <img
+              class="reel-item"
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80"
+              alt="Artist 3"
+              loading="lazy"
+            />
+            <img
+              class="reel-item"
+              src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1600&q=80"
+              alt="Artist 4"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="reel-ui" aria-hidden="true">
+            <div class="dots" id="dots">
+              <!-- populated by JS -->
+            </div>
+          </div>
+
+          <button class="reel-btn prev" type="button" id="prev" aria-label="Previous artist">‹</button>
+          <button class="reel-btn next" type="button" id="next" aria-label="Next artist">›</button>
         </div>
-
-        <div class="cards">
-          <article class="card">
-            <h3 class="card-title">Artist development</h3>
-            <p class="card-text">Mentorship, production support, and growth strategy.</p>
-            <a class="card-link" href="about.html">About our approach →</a>
-          </article>
-
-          <article class="card">
-            <h3 class="card-title">Partnerships</h3>
-            <p class="card-text">Work with labels, creators, and brands—together.</p>
-            <a class="card-link" href="partners.html">Explore partners →</a>
-          </article>
-
-          <article class="card">
-            <h3 class="card-title">Distribution & promotion</h3>
-            <p class="card-text">Release planning, marketing, and performance analytics.</p>
-            <a class="card-link" href="contact.html">Let’s collaborate →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="container cta-inner">
-        <div>
-          <h2 class="cta-title">Ready to build something in purple?</h2>
-          <p class="cta-subtitle">Tell us what you’re working on and we’ll respond.</p>
-        </div>
-        <a class="btn btn-primary" href="contact.html">Contact</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-left">
-        <div class="brand-footer">
-          <span class="brand-mark" aria-hidden="true"></span>
-          <span class="brand-name">YourBrand</span>
-        </div>
-        <p class="footer-text">© <span id="year"></span> YourBrand. All rights reserved.</p>
+      <div class="brand-footer">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">YourBrand</span>
       </div>
-
-      <div class="footer-links">
-        <a href="about.html">About us</a>
-        <a href="partners.html">Partners</a>
-        <a href="contact.html">Contact</a>
-      </div>
+      <p class="footer-text">© <span id="year"></span> YourBrand. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
-    // Mobile nav toggle
-    const btn = document.querySelector('[data-nav-toggle]');
-    const nav = document.querySelector('[data-nav]');
-    if (btn && nav) {
-      btn.addEventListener('click', () => {
-        const expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', String(!expanded));
-        nav.classList.toggle('nav--open');
+    const items = Array.from(document.querySelectorAll(".reel-item"));
+    const dotsEl = document.getElementById("dots");
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next");
+
+    let index = 0;
+    const intervalMs = 3500;
+    let timer;
+
+    function renderDots() {
+      items.forEach((_, i) => {
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "dot" + (i === index ? " is-active" : "");
+        b.setAttribute("aria-label", `Go to artist ${i + 1}`);
+        b.addEventListener("click", () => goTo(i, true));
+        dotsEl.appendChild(b);
       });
     }
 
-    // Footer year
-    const y = document.getElementById('year');
-    if (y) y.textContent = new Date().getFullYear();
+    function setActive(newIndex) {
+      items.forEach((img, i) => img.classList.toggle("is-active", i === newIndex));
+      const dots = Array.from(dotsEl.querySelectorAll(".dot"));
+      dots.forEach((d, i) => d.classList.toggle("is-active", i === newIndex));
+      index = newIndex;
+    }
+
+    function goTo(newIndex, restart) {
+      const total = items.length;
+      const wrapped = (newIndex + total) % total;
+      setActive(wrapped);
+      if (restart) restartTimer();
+    }
+
+    function restartTimer() {
+      clearInterval(timer);
+      timer = setInterval(() => goTo(index + 1), intervalMs);
+    }
+
+    prevBtn.addEventListener("click", () => goTo(index - 1, true));
+    nextBtn.addEventListener("click", () => goTo(index + 1, true));
+
+    // Pause on hover/focus for nicer UX
+    const reelWrap = document.querySelector(".reel-wrap");
+    reelWrap.addEventListener("mouseenter", () => clearInterval(timer));
+    reelWrap.addEventListener("mouseleave", () => restartTimer());
+    reelWrap.addEventListener("focusin", () => clearInterval(timer));
+    reelWrap.addEventListener("focusout", () => restartTimer());
+
+    renderDots();
+    timer = setInterval(() => goTo(index + 1), intervalMs);
+
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
