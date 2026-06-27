@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Partners</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">YourBrand</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" data-nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About us</a>
+        <a href="partners.html" class="nav-link nav-active">Partners</a>
+        <a href="contact.html" class="nav-link nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-inner">
+          <div class="page-hero-text">
+            <p class="kicker">Partners</p>
+            <h1 class="page-title">Brands & collaborators we love</h1>
+            <p class="page-subtitle">
+              Add your partner list here. Replace the example items with real names, links, and categories.
+            </p>
+          </div>
+          <div class="page-hero-side">
+            <div class="side-card">
+              <div class="side-card-title">Partner types</div>
+              <div class="tag-row">
+                <span class="tag">Labels</span>
+                <span class="tag">Creators</span>
+                <span class="tag">Studios</span>
+                <span class="tag">Brands</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="cards grid-2">
+          <article class="partner">
+            <div class="partner-logo">A</div>
+            <div class="partner-body">
+              <h3 class="partner-title">Partner One</h3>
+              <p class="partner-text">Collaboration on releases, campaigns, and promotions.</p>
+              <a class="card-link" href="contact.html">Partner with us →</a>
+            </div>
+          </article>
+
+          <article class="partner">
+            <div class="partner-logo">B</div>
+            <div class="partner-body">
+              <h3 class="partner-title">Partner Two</h3>
+              <p class="partner-text">Studios + production support for artist projects.</p>
+              <a class="card-link" href="contact.html">Partner with us →</a>
+            </div>
+          </article>
+
+          <article class="partner">
+            <div class="partner-logo">C</div>
+            <div class="partner-body">
+              <h3 class="partner-title">Partner Three</h3>
+              <p class="partner-text">Creative services and marketing partnerships.</p>
+              <a class="card-link" href="contact.html">Partner with us →</a>
+            </div>
+          </article>
+
+          <article class="partner">
+            <div class="partner-logo">D</div>
+            <div class="partner-body">
+              <h3 class="partner-title">Partner Four</h3>
+              <p class="partner-text">Distribution and performance analytics.</p>
+              <a class="card-link" href="contact.html">Partner with us →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <div>
+          <h2 class="cta-title">Let’s collaborate</h2>
+          <p class="cta-subtitle">Tell us what you need—we’ll propose next steps.</p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Contact</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="brand-footer">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">YourBrand</span>
+        </div>
+        <p class="footer-text">© <span id="year"></span> YourBrand. All rights reserved.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="about.html">About us</a>
+        <a href="partners.html">Partners</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('[data-nav-toggle]');
+    const nav = document.querySelector('[data-nav]');
+    if (btn && nav) {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('nav--open');
+      });
+    }
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
