@@ -2,263 +2,183 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Your Company</title>
-  <meta name="description" content="Sales, distribution, marketing and services for music labels and artists." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <!-- Top bar / header -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#">
-        <span class="brand-mark" aria-hidden="true">●</span>
-        <span class="brand-text">Your Brand</span>
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">YourBrand</span>
       </a>
 
-      <nav class="nav" aria-label="Primary">
-        <a href="#services">Services</a>
-        <a href="#releases">Releases</a>
-        <a href="#news">News</a>
-        <a href="#clients">Clients</a>
-        <a class="btn btn-ghost" href="#contact">Contact</a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" data-nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About us</a>
+        <a href="partners.html" class="nav-link">Partners</a>
+        <a href="contact.html" class="nav-link nav-cta">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <p class="kicker">Connecting creators with consumers</p>
-        <h1>Sales, distribution, label services, warehousing, and fulfilment.</h1>
-        <p class="lead">
-          A modern support partner for labels and artists—focused on getting your releases to the right places, on time.
-        </p>
-        <div class="hero-actions">
-          <a class="btn" href="#services">Explore services</a>
-          <a class="btn btn-ghost" href="#contact">Become a client</a>
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">Music. Culture. Collaboration.</p>
+          <h1 class="hero-title">
+            A modern home for sound, artists, and partners.
+          </h1>
+          <p class="hero-subtitle">
+            Replace this copy with your story—what you do, who you serve, and why it matters.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="contact.html">Get in touch</a>
+            <a class="btn btn-ghost" href="about.html">Learn more</a>
+          </div>
+
+          <div class="hero-stats" role="list" aria-label="Highlights">
+            <div class="stat" role="listitem">
+              <div class="stat-value">120+</div>
+              <div class="stat-label">Artists</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="stat-value">35</div>
+              <div class="stat-label">Partners</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="stat-value">10M+</div>
+              <div class="stat-label">Streams</div>
+            </div>
+          </div>
         </div>
-        <div class="hero-trust">
-          <div class="trust-item">
-            <div class="trust-num">1000+</div>
-            <div class="trust-label">Retail partners</div>
-          </div>
-          <div class="trust-item">
-            <div class="trust-num">100k+</div>
-            <div class="trust-label">Sq ft warehousing</div>
-          </div>
-          <div class="trust-item">
-            <div class="trust-num">Worldwide</div>
-            <div class="trust-label">Distribution</div>
+
+        <div class="hero-media" aria-hidden="true">
+          <div class="media-card">
+            <div class="media-glow"></div>
+            <div class="media-top">
+              <div class="pill">New releases</div>
+              <div class="pill pill-outline">Purple nights</div>
+            </div>
+
+            <div class="media-art">
+              <!-- Simple decorative shapes (replace with your image/video if you want) -->
+              <div class="blob b1"></div>
+              <div class="blob b2"></div>
+              <div class="blob b3"></div>
+              <div class="ring"></div>
+            </div>
+
+            <div class="media-bottom">
+              <div class="mini-row">
+                <span class="dot"></span>
+                <span>Featured campaign</span>
+              </div>
+              <div class="mini-row">
+                <span class="dot dot-2"></span>
+                <span>Community updates</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Services -->
-  <section id="services" class="section">
-    <div class="container">
-      <div class="section-head">
-        <h2>What we do</h2>
-        <p>Pick the service blocks you need—swap titles, copy, and visuals to match your business.</p>
-      </div>
-
-      <div class="grid-3">
-        <article class="card">
-          <h3>Sales & Marketing</h3>
-          <p>Guidance, relationships, and support to put releases in front of the right buyers.</p>
-          <a class="link" href="#contact">Find out more →</a>
-        </article>
-
-        <article class="card">
-          <h3>Distribution</h3>
-          <p>Efficient routes to retailers and online partners, managed by experts across genres.</p>
-          <a class="link" href="#contact">Find out more →</a>
-        </article>
-
-        <article class="card">
-          <h3>Warehousing & Fulfilment</h3>
-          <p>Pick, pack and dispatch with clear processes and reliable logistics.</p>
-          <a class="link" href="#contact">Find out more →</a>
-        </article>
-      </div>
-
-      <div class="cta-row">
-        <div class="cta-text">
-          <h3>Ready to work together?</h3>
-          <p>Tell us about your label/artist and we’ll get back to you.</p>
+      <div class="container hero-strip">
+        <div class="strip-title">Trusted by</div>
+        <div class="logo-row" aria-label="Partner logos">
+          <div class="logo">Partner One</div>
+          <div class="logo">Partner Two</div>
+          <div class="logo">Partner Three</div>
+          <div class="logo">Partner Four</div>
+          <div class="logo">Partner Five</div>
         </div>
-        <a class="btn" href="#contact">Contact</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Featured releases -->
-  <section id="releases" class="section section-alt">
-    <div class="container">
-      <div class="section-head">
-        <h2>Featured releases</h2>
-        <p>Use a simple card grid for highlight titles. Replace placeholders with real covers and links.</p>
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">What we do</h2>
+          <p class="section-subtitle">Three simple blocks you can expand into real content.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3 class="card-title">Artist development</h3>
+            <p class="card-text">Mentorship, production support, and growth strategy.</p>
+            <a class="card-link" href="about.html">About our approach →</a>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Partnerships</h3>
+            <p class="card-text">Work with labels, creators, and brands—together.</p>
+            <a class="card-link" href="partners.html">Explore partners →</a>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Distribution & promotion</h3>
+            <p class="card-text">Release planning, marketing, and performance analytics.</p>
+            <a class="card-link" href="contact.html">Let’s collaborate →</a>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div class="grid-3">
-        <article class="release">
-          <div class="release-cover" role="img" aria-label="Release cover placeholder">
-            <span>Cover</span>
-          </div>
-          <div class="release-body">
-            <p class="release-artist">Artist Name</p>
-            <h3 class="release-title">Release Title</h3>
-            <a class="link" href="#contact">More info →</a>
-          </div>
-        </article>
-
-        <article class="release">
-          <div class="release-cover" role="img" aria-label="Release cover placeholder">
-            <span>Cover</span>
-          </div>
-          <div class="release-body">
-            <p class="release-artist">Artist Name</p>
-            <h3 class="release-title">Release Title</h3>
-            <a class="link" href="#contact">More info →</a>
-          </div>
-        </article>
-
-        <article class="release">
-          <div class="release-cover" role="img" aria-label="Release cover placeholder">
-            <span>Cover</span>
-          </div>
-          <div class="release-body">
-            <p class="release-artist">Artist Name</p>
-            <h3 class="release-title">Release Title</h3>
-            <a class="link" href="#contact">More info →</a>
-          </div>
-        </article>
+    <section class="cta">
+      <div class="container cta-inner">
+        <div>
+          <h2 class="cta-title">Ready to build something in purple?</h2>
+          <p class="cta-subtitle">Tell us what you’re working on and we’ll respond.</p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Contact</a>
       </div>
-    </div>
-  </section>
-
-  <!-- News -->
-  <section id="news" class="section">
-    <div class="container">
-      <div class="section-head">
-        <h2>Latest news</h2>
-        <p>Short posts with a “read more” link. (You can later connect this to a CMS.)</p>
-      </div>
-
-      <div class="grid-3">
-        <article class="post">
-          <div class="post-thumb" role="img" aria-label="News thumbnail placeholder"></div>
-          <div class="post-body">
-            <div class="post-date">23 Jun</div>
-            <h3>News headline goes here</h3>
-            <p>1–2 sentence summary of the article.</p>
-            <a class="link" href="#contact">Read more →</a>
-          </div>
-        </article>
-
-        <article class="post">
-          <div class="post-thumb" role="img" aria-label="News thumbnail placeholder"></div>
-          <div class="post-body">
-            <div class="post-date">12 May</div>
-            <h3>News headline goes here</h3>
-            <p>1–2 sentence summary of the article.</p>
-            <a class="link" href="#contact">Read more →</a>
-          </div>
-        </article>
-
-        <article class="post">
-          <div class="post-thumb" role="img" aria-label="News thumbnail placeholder"></div>
-          <div class="post-body">
-            <div class="post-date">14 Apr</div>
-            <h3>News headline goes here</h3>
-            <p>1–2 sentence summary of the article.</p>
-            <a class="link" href="#contact">Read more →</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Clients -->
-  <section id="clients" class="section section-alt">
-    <div class="container">
-      <div class="section-head">
-        <h2>Customers & partners</h2>
-        <p>Logo grid + optional testimonials.</p>
-      </div>
-
-      <div class="logo-grid" aria-label="Partner logos">
-        <div class="logo">Logo</div>
-        <div class="logo">Logo</div>
-        <div class="logo">Logo</div>
-        <div class="logo">Logo</div>
-        <div class="logo">Logo</div>
-        <div class="logo">Logo</div>
-      </div>
-
-      <div class="testimonials">
-        <article class="quote">
-          <p class="quote-text">“Really helpful team and great service.”</p>
-          <p class="quote-by">— Client Name</p>
-        </article>
-        <article class="quote">
-          <p class="quote-text">“Responsive, proactive, and reliable.”</p>
-          <p class="quote-by">— Client Name</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="section-head">
-        <h2>Contact</h2>
-        <p>Static form UI for now. Later you can connect it to an email service.</p>
-      </div>
-
-      <form class="form" onsubmit="event.preventDefault(); alert('Form demo: connect this to a backend/email service.');">
-        <label>
-          <span>Your Name</span>
-          <input required type="text" name="name" autocomplete="name" />
-        </label>
-        <label>
-          <span>Your Email</span>
-          <input required type="email" name="email" autocomplete="email" />
-        </label>
-        <label>
-          <span>Your Website (optional)</span>
-          <input type="url" name="website" autocomplete="url" />
-        </label>
-        <label>
-          <span>Your Message</span>
-          <textarea required name="message" rows="5"></textarea>
-        </label>
-        <button class="btn" type="submit">Send message</button>
-      </form>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-brand">
-        <div class="brand-text">Your Brand</div>
-        <div class="muted">© <span id="year"></span> Your Brand</div>
+      <div class="footer-left">
+        <div class="brand-footer">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">YourBrand</span>
+        </div>
+        <p class="footer-text">© <span id="year"></span> YourBrand. All rights reserved.</p>
       </div>
+
       <div class="footer-links">
-        <a href="#services">Services</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
+        <a href="about.html">About us</a>
+        <a href="partners.html">Partners</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
   </footer>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // Mobile nav toggle
+    const btn = document.querySelector('[data-nav-toggle]');
+    const nav = document.querySelector('[data-nav]');
+    if (btn && nav) {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('nav--open');
+      });
+    }
+
+    // Footer year
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
