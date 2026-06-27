@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">YourBrand</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" data-nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About us</a>
+        <a href="partners.html" class="nav-link">Partners</a>
+        <a href="contact.html" class="nav-link nav-active nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-inner">
+          <div class="page-hero-text">
+            <p class="kicker">Contact</p>
+            <h1 class="page-title">Let’s talk</h1>
+            <p class="page-subtitle">
+              Fill this form in and wire it to your email service (or keep it static for now).
+            </p>
+          </div>
+          <div class="page-hero-side">
+            <div class="side-card">
+              <div class="side-card-title">Direct</div>
+              <div class="contact-lines">
+                <div class="mini-row"><span class="dot"></span><span>hello@yourbrand.com</span></div>
+                <div class="mini-row"><span class="dot dot-2"></span><span>+00 000 000 000</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="contact-grid">
+          <form class="form-card" action="#" method="post">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+
+            <div class="form-row">
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic" required>
+                <option value="" selected disabled>Select a topic</option>
+                <option>Partnership</option>
+                <option>Artist inquiry</option>
+                <option>Press</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Send message</button>
+            <p class="form-note">This demo form doesn’t submit anywhere yet.</p>
+          </form>
+
+          <aside class="aside">
+            <div class="aside-card">
+              <h3 class="aside-title">What happens next</h3>
+              <ol class="steps">
+                <li>We review your message.</li>
+                <li>We reply with questions or next steps.</li>
+                <li>We schedule a call if needed.</li>
+              </ol>
+              <a class="card-link" href="partners.html">See partner options →</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="brand-footer">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">YourBrand</span>
+        </div>
+        <p class="footer-text">© <span id="year"></span> YourBrand. All rights reserved.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="about.html">About us</a>
+        <a href="partners.html">Partners</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('[data-nav-toggle]');
+    const nav = document.querySelector('[data-nav]');
+    if (btn && nav) {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('nav--open');
+      });
+    }
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
