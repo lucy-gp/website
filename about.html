@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About us</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">YourBrand</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" data-nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link nav-active">About us</a>
+        <a href="partners.html" class="nav-link">Partners</a>
+        <a href="contact.html" class="nav-link nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-inner">
+          <div class="page-hero-text">
+            <p class="kicker">About us</p>
+            <h1 class="page-title">A label built for the next era</h1>
+            <p class="page-subtitle">
+              Replace this with your mission, history, values, and team story.
+            </p>
+          </div>
+
+          <div class="page-hero-side">
+            <div class="side-card">
+              <div class="side-card-title">Our values</div>
+              <ul class="checklist">
+                <li>Respect for artists</li>
+                <li>Creative excellence</li>
+                <li>Long-term partnerships</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container">
+        <div class="two-col">
+          <div>
+            <h2 class="section-title">How we work</h2>
+            <p class="section-subtitle">
+              Use these blocks as real sections: strategy, production, release cycles, and support.
+            </p>
+
+            <div class="cards small">
+              <article class="card">
+                <h3 class="card-title">Strategy</h3>
+                <p class="card-text">Define goals, audience, and a release plan.</p>
+              </article>
+              <article class="card">
+                <h3 class="card-title">Creation</h3>
+                <p class="card-text">Support production and creative direction.</p>
+              </article>
+              <article class="card">
+                <h3 class="card-title">Growth</h3>
+                <p class="card-text">Promotion, analytics, and continuous improvement.</p>
+              </article>
+            </div>
+          </div>
+
+          <aside class="aside">
+            <div class="aside-card">
+              <h3 class="aside-title">Quick facts</h3>
+              <div class="facts">
+                <div class="fact">
+                  <div class="fact-label">Founded</div>
+                  <div class="fact-value">2019</div>
+                </div>
+                <div class="fact">
+                  <div class="fact-label">Focus</div>
+                  <div class="fact-value">Global releases</div>
+                </div>
+                <div class="fact">
+                  <div class="fact-label">Location</div>
+                  <div class="fact-value">Worldwide</div>
+                </div>
+              </div>
+              <a class="card-link" href="contact.html">Talk to our team →</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <div>
+          <h2 class="cta-title">Want to partner with us?</h2>
+          <p class="cta-subtitle">Let’s build releases that resonate.</p>
+        </div>
+        <a class="btn btn-primary" href="partners.html">Partners</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="brand-footer">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">YourBrand</span>
+        </div>
+        <p class="footer-text">© <span id="year"></span> YourBrand. All rights reserved.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="about.html">About us</a>
+        <a href="partners.html">Partners</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('[data-nav-toggle]');
+    const nav = document.querySelector('[data-nav]');
+    if (btn && nav) {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('nav--open');
+      });
+    }
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
